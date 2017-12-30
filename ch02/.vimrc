@@ -7,6 +7,8 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set hlsearch
+set expandtab
+autocmd FileType make setlocal noexpandtab
 
 "set background=dark    " Light theme is used by default
 "set t_Co=256
