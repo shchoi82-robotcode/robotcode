@@ -3,12 +3,11 @@
 
 int main(int argc, char *args[])
 {
-	int i;
+    int i;
 
-	for(i = 0 ; i < argc ; i++)
-	//	for(i = 0 ; args[i] != NULL ; i++)
-		printf("args[%d]: %s\n", i, args[i]);
-	exit(0);
+    for(i = 0 ; i < argc ; i++)
+        //	for(i = 0 ; args[i] != NULL ; i++)
+        printf("args[%d]: %s\n", i, args[i]);
+    exit(0);
 }
-
 

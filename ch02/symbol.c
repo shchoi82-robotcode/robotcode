@@ -6,10 +6,10 @@
 
 int main(int argc, char *argv[])
 {
-	printf("%lf  \n", PI);
-	printf("%d  \n", NUM);
-	printf("%d  \n", BUFFER_SIZE);
+    printf("%lf  \n", PI);
+    printf("%d  \n", NUM);
+    printf("%d  \n", BUFFER_SIZE);
 
-	return 0;
+    return 0;
 }
 
