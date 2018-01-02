@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#define  PI   3.14
-#define  NUM  100
-#define  BUFFER_SIZE  200
+#define PI   3.14
+#define NUM  100
+#define BUFFER_SIZE  200
 
 int main(int argc, char *argv[])
 {
