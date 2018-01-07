@@ -8,6 +8,13 @@ EXAMPLES =	direct_reg_access.out \
 			switchbtn_ex4.out \
 			switchbtn_ex5.out \
 			switchbtn_ex6.out \
+			74hc595_ex1.out \
+			74hc595_ex2.out \
+			74hc595_ex3.out \
+			74hc595_ex4.out \
+			74hc595_ex5.out \
+			74hc595_ex6.out \
+			74hc595_ex7.out \
 
 CFLAGS = -Wall -W
 
@@ -42,6 +49,27 @@ switchbtn_ex5.out : switchbtn_ex5.c
 
 switchbtn_ex6.out : switchbtn_ex6.c
 	gcc $(CFLAGS) -Wno-unused-parameter -lpigpiod_if2 -lpthread -lrt $^ -o $@
+
+74hc595_ex1.out : 74hc595_ex1.c
+	gcc $(CFLAGS) -lpigpiod_if2 -lpthread -lrt $^ -o $@
+
+74hc595_ex2.out : 74hc595_ex2.c
+	gcc $(CFLAGS) -lpigpiod_if2 -lpthread -lrt $^ -o $@
+
+74hc595_ex3.out : 74hc595_ex3.c
+	gcc $(CFLAGS) -lpigpiod_if2 -lpthread -lrt $^ -o $@
+
+74hc595_ex4.out : 74hc595_ex4.c
+	gcc $(CFLAGS) -lpigpiod_if2 -lpthread -lrt $^ -o $@
+
+74hc595_ex5.out : 74hc595_ex5.c 74hc595_functions.c
+	gcc $(CFLAGS) -lpigpiod_if2 -lpthread -lrt $^ -o $@
+
+74hc595_ex6.out : 74hc595_ex6.c 74hc595_functions.c
+	gcc $(CFLAGS) -lpigpiod_if2 -lpthread -lrt $^ -o $@
+
+74hc595_ex7.out : 74hc595_ex7.c 74hc595_functions.c
+	gcc $(CFLAGS) -lpigpiod_if2 -lpthread -lrt $^ -o $@
 
 clean :
 	rm $(EXAMPLES)
