@@ -14,6 +14,7 @@ int init(void)
     set_mode(pi, STR_CLK, PI_OUTPUT);
     set_mode(pi, SHR_CLK, PI_OUTPUT);
     set_mode(pi, SHR_CLEAR, PI_OUTPUT);
+    gpio_write(pi, SHR_CLEAR, 1);
     return 1;
 }
 
