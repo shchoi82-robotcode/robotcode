@@ -121,8 +121,8 @@ void method4()
 
     matcopy = (char**)malloc(ROW * sizeof(char*));
 
-//  *(matcopy + 0) = (char*)malloc(ROW * COL * sizeof(char*));
-    matcopy[0] = (char*)malloc(ROW * COL * sizeof(char*));
+//  *(matcopy + 0) = (char*)malloc(ROW * COL * sizeof(char));
+    matcopy[0] = (char*)malloc(ROW * COL * sizeof(char));
 
     for(i = 0 ; i < ROW ; i++)
 //      *(matcopy + i) = *matcopy + COL * i;
